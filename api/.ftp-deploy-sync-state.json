@@ -1,0 +1,245 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1771704654335,
+    "data": [
+        {
+            "type": "file",
+            "name": ".env.production",
+            "size": 599,
+            "hash": "fc7b799f29a4071f2b487cf806ecec2f280ead57fae4fafee7b1cafa92b0c30c"
+        },
+        {
+            "type": "file",
+            "name": ".htaccess",
+            "size": 771,
+            "hash": "14a299347fa2542d0e09b9ba96ed3a4e073485ce36ea9a84fd4c9483828b7e46"
+        },
+        {
+            "type": "file",
+            "name": "README.md",
+            "size": 7415,
+            "hash": "937338377ba7b703c4c3b1a42a0291eca066e74266b89e53e8a4515f346eca8d"
+        },
+        {
+            "type": "file",
+            "name": "composer.json",
+            "size": 65,
+            "hash": "42044dc9845a67d0cfb834ddead119f5d1a13dcf1420686e58a320e434357732"
+        },
+        {
+            "type": "file",
+            "name": "composer.lock",
+            "size": 4274,
+            "hash": "94584583f5ea73f22d5c2480867cce96d324e201a8652d99d52cb6e546f3b436"
+        },
+        {
+            "type": "folder",
+            "name": "config"
+        },
+        {
+            "type": "folder",
+            "name": "database"
+        },
+        {
+            "type": "folder",
+            "name": "helpers"
+        },
+        {
+            "type": "file",
+            "name": "index.php",
+            "size": 7841,
+            "hash": "1c6b95a9db5c557cd396ad384ebe9e82546f3f6a247db98d82f642182e91235a"
+        },
+        {
+            "type": "folder",
+            "name": "middleware"
+        },
+        {
+            "type": "folder",
+            "name": "routes"
+        },
+        {
+            "type": "folder",
+            "name": "services"
+        },
+        {
+            "type": "folder",
+            "name": "uploads"
+        },
+        {
+            "type": "file",
+            "name": "config/config.php",
+            "size": 1405,
+            "hash": "40265147c85e831879d6f491dc910514644c0c5d9b1dc4356d3164e46eed524c"
+        },
+        {
+            "type": "file",
+            "name": "config/database.php",
+            "size": 1208,
+            "hash": "62b120ffe719a05e63f2b06c876fa56d53bccd743242db550405f32261548df7"
+        },
+        {
+            "type": "file",
+            "name": "database/eskisehirisg_cicekci.sql",
+            "size": 22755,
+            "hash": "1f7debfa032807b6777db356590e9e2655137e23b6fbba4db39761874b196768"
+        },
+        {
+            "type": "file",
+            "name": "database/schema.sql",
+            "size": 9606,
+            "hash": "da9cb8ad19d21bd71ef5d635e770c3235e0ca2b73e2744f859ecc93c1e482287"
+        },
+        {
+            "type": "file",
+            "name": "helpers/jwt.php",
+            "size": 2350,
+            "hash": "5d76785b7516e49b53dca455b8b7cfcf89de970f40591e3e14981554f49cde49"
+        },
+        {
+            "type": "file",
+            "name": "helpers/response.php",
+            "size": 1376,
+            "hash": "0c471fdf597bdf93e44f6115457fa1aa30177686efbef6a322b7cfc324a270ad"
+        },
+        {
+            "type": "file",
+            "name": "helpers/upload.php",
+            "size": 2124,
+            "hash": "198391121b751645f26d4b37f6263afdeeb5447eb617c6a2d482a56d1b4416e2"
+        },
+        {
+            "type": "file",
+            "name": "middleware/auth.php",
+            "size": 3742,
+            "hash": "83e911dfe4ad0a53bfa0fda0c0c696b22fe232a31d0c17dd78bb691843dab4df"
+        },
+        {
+            "type": "file",
+            "name": "routes/auth.php",
+            "size": 2786,
+            "hash": "2a749902e0ba3e2ba6a91972b57f4aa40e2d56419a832ff448c5c3d7c7f29950"
+        },
+        {
+            "type": "file",
+            "name": "routes/blogs.php",
+            "size": 6089,
+            "hash": "45d89e023a62f0e003833d6dcb40694b260a9dd0e922d56b5dcc89b6fdd4bb98"
+        },
+        {
+            "type": "file",
+            "name": "routes/categories.php",
+            "size": 5795,
+            "hash": "bf19366c2bcf9d98c3587cdc4b2cd2a18906ae458377bb813465fabbcd0a070b"
+        },
+        {
+            "type": "file",
+            "name": "routes/neighborhoods.php",
+            "size": 2035,
+            "hash": "ffb9714b20bcc03334532170ae39a6ef5fad17f231b699be561742edf69213dd"
+        },
+        {
+            "type": "file",
+            "name": "routes/order-items.php",
+            "size": 3964,
+            "hash": "314380902b6c90e5a038ec0bc0cb4cdbccb423d54f90421fc663a183d1370414"
+        },
+        {
+            "type": "file",
+            "name": "routes/orders.php",
+            "size": 5863,
+            "hash": "b09bdb1d4a8a9285160517e62d0140881cf01c36bd039b4bcb9c20f773867682"
+        },
+        {
+            "type": "file",
+            "name": "routes/products.php",
+            "size": 8177,
+            "hash": "b56bc02db2a8b0e0952b81e9695295acc4599b7532884d12695b607bd5264408"
+        },
+        {
+            "type": "file",
+            "name": "routes/profiles.php",
+            "size": 2482,
+            "hash": "43f9a8f08b5c2ed3ef1d2e06a9476ce80e6f447949fd41ce492386a4f679837f"
+        },
+        {
+            "type": "file",
+            "name": "services/AuthService.php",
+            "size": 5142,
+            "hash": "ab7b80bc7452e2886d95a0122399bee3eb3b45bc674f4a4f37d00b12ea83b1d2"
+        },
+        {
+            "type": "file",
+            "name": "services/BlogService.php",
+            "size": 5265,
+            "hash": "c667f2bfa9d374a716e5d28cbc5b35a809294c87ddb278547ca919ad84f27add"
+        },
+        {
+            "type": "file",
+            "name": "services/CategoryService.php",
+            "size": 4766,
+            "hash": "00b85b835087870a0a67d7542fa07878a8d2d93db32195b01a8b5c52deb2985c"
+        },
+        {
+            "type": "file",
+            "name": "services/MailService.php",
+            "size": 6757,
+            "hash": "1e2f1aca0b155f1c8612bf6cb44a09052ad60e5eb51b27787fb8c836709de7a0"
+        },
+        {
+            "type": "file",
+            "name": "services/NeighborhoodService.php",
+            "size": 3147,
+            "hash": "60e119921e9e963ba1aadb4301ace202fd719893419636e985f7cf5b0e289e62"
+        },
+        {
+            "type": "file",
+            "name": "services/OrderItemService.php",
+            "size": 3597,
+            "hash": "a81d07bed6255f1c5fee4195ee62af67b1d0071d65df45a39016f908a2aafdea"
+        },
+        {
+            "type": "file",
+            "name": "services/OrderService.php",
+            "size": 13635,
+            "hash": "6d1fcd241f4c796379edcda0d1e19e525f038a2234f2b5671431993802ec2f75"
+        },
+        {
+            "type": "file",
+            "name": "services/ProductService.php",
+            "size": 10899,
+            "hash": "7c14afcc25e4647700995df38bbd332526d4743ab0ea975846345eabc1ebf2e4"
+        },
+        {
+            "type": "file",
+            "name": "services/ProfileService.php",
+            "size": 2941,
+            "hash": "9b80eb9fb3b9cb4b60567997e65d56a40be0e181116c9b84091658937b0ffe39"
+        },
+        {
+            "type": "folder",
+            "name": "uploads/blogs"
+        },
+        {
+            "type": "folder",
+            "name": "uploads/categories"
+        },
+        {
+            "type": "folder",
+            "name": "uploads/products"
+        },
+        {
+            "type": "file",
+            "name": "uploads/blogs/1770639523-86295d39.png",
+            "size": 41165,
+            "hash": "6ddbbd4964316faaf01d33765bd1ffac2586cb08325682fc5997073163a53eb3"
+        },
+        {
+            "type": "file",
+            "name": "uploads/blogs/1770646589-c3b80db5.png",
+            "size": 1005,
+            "hash": "1a39975b89b11d6ba0f38a01d558f89731e8fb1db9d98a0397c59f84a5686191"
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+/* ============================
+   Hero Slider Styles
+   ============================ */
+
+/* Arrow navigation buttons — hidden on mobile, visible on md+ */
+.hero-arrow-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(219, 39, 119, 0.15);
+    color: #db2777;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.hero-arrow-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.hero-arrow-btn--left {
+    left: 20px;
+}
+
+.hero-arrow-btn--right {
+    right: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero-arrow-btn {
+        display: flex;
+    }
+
+    .hero-arrow-btn--left {
+        left: 36px;
+    }
+
+    .hero-arrow-btn--right {
+        right: 36px;
+    }
+}
+
+/* Dot indicators */
+.hero-dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 20;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background: rgba(219, 39, 119, 0.25);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, width 0.3s;
+    padding: 0;
+}
+
+.hero-dot--active {
+    background: #db2777;
+    width: 28px;
+}
+
+/* Slide transition animations */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-slide-enter-left {
+    animation: slideInFromLeft 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-slide-enter-right {
+    animation: slideInFromRight 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Ensure section has relative positioning for absolute children */
+.hero-section {
+    position: relative;
+}
