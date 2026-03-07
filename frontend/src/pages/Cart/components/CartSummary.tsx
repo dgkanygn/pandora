@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaCreditCard } from 'react-icons/fa';
 
+import { formatPrice } from '@/utils/formatPrice';
+
 interface CartSummaryProps {
     subtotal: number;
     shipping: number;
@@ -16,7 +18,7 @@ const CartSummary: React.FC<CartSummaryProps> = ({ subtotal, onCheckout }) => {
             <div className="space-y-3 mb-6">
                 <div className="pt-3 flex justify-between text-lg font-bold text-gray-900">
                     <span>Toplam</span>
-                    <span>{subtotal} ₺</span>
+                    <span>{formatPrice(subtotal)} ₺</span>
                 </div>
             </div>
 

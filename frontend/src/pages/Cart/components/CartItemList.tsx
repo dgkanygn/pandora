@@ -3,6 +3,8 @@ import { FaTrash } from 'react-icons/fa';
 import type { CartItem } from '../../../context/CartContext';
 import toast from 'react-hot-toast';
 
+import { formatPrice } from '@/utils/formatPrice';
+
 interface CartItemListProps {
     items: CartItem[];
     updateQuantity: (id: string, newQuantity: number) => void;
@@ -30,7 +32,7 @@ const CartItemList: React.FC<CartItemListProps> = ({ items, updateQuantity, remo
                         </div>
                         <div className="flex-1 text-center sm:text-left">
                             <h3 className="text-lg font-bold text-gray-900">{item.name}</h3>
-                            <p className="text-pink-600 font-medium">{item.price.toFixed(2)} ₺</p>
+                            <p className="text-pink-600 font-medium">{formatPrice(item.price)} ₺</p>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="flex items-center border border-gray-200 rounded-lg">

@@ -6,6 +6,8 @@ import toast from 'react-hot-toast';
 
 import productPlaceholder from '@/assets/placeholders/product.png';
 
+import { formatPrice } from '@/utils/formatPrice';
+
 interface ProductCardProps {
     product: Product;
 }
@@ -66,7 +68,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
                 <div className="mt-auto flex justify-between items-center mb-4">
                     <span className="text-xl font-bold text-gray-900">
-                        {product.price.toLocaleString('tr-TR')} ₺
+                        {formatPrice(product.price)} ₺
                     </span>
                     {/* <div className="flex text-yellow-400 text-xs">
                         {'★'.repeat(5)}

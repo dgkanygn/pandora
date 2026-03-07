@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCart } from '../../../context/CartContext';
+import { formatPrice } from '@/utils/formatPrice';
 
 interface CheckoutOrderSummaryProps {
     shippingCost: number;
@@ -29,7 +30,7 @@ const CheckoutOrderSummary: React.FC<CheckoutOrderSummaryProps> = ({ shippingCos
                             <p className="text-gray-500 text-xs">Adet: {item.quantity}</p>
                         </div>
                         <div className="font-bold text-pink-600 text-sm">
-                            {(item.price * item.quantity).toFixed(2)} ₺
+                            {formatPrice(item.price * item.quantity)} ₺
                         </div>
                     </div>
                 ))}
@@ -38,19 +39,19 @@ const CheckoutOrderSummary: React.FC<CheckoutOrderSummaryProps> = ({ shippingCos
             <div className="bg-gray-50 rounded-xl p-4 space-y-2">
                 <div className="flex justify-between text-gray-600 text-sm">
                     <span>Ara Toplam</span>
-                    <span>{subtotal.toFixed(2)} ₺</span>
+                    <span>{formatPrice(subtotal)} ₺</span>
                 </div>
                 <div className="flex justify-between text-gray-600 text-sm">
                     <span>Teslimat Ücreti</span>
                     {totalShipping === 0 ? (
                         <span className="text-green-600 font-medium">Bedava</span>
                     ) : (
-                        <span>{totalShipping.toFixed(2)} ₺</span>
+                        <span>{formatPrice(totalShipping)} ₺</span>
                     )}
                 </div>
                 <div className="pt-2 border-t border-gray-200 flex justify-between font-bold text-gray-900">
                     <span>Toplam</span>
-                    <span>{total.toFixed(2)} ₺</span>
+                    <span>{formatPrice(total)} ₺</span>
                 </div>
             </div>
         </div>

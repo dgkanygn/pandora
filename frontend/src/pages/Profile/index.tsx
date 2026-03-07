@@ -7,6 +7,7 @@ import Modal from '../../components/Modal';
 import ConfirmModal from '../../components/ConfirmModal';
 import { api } from '../../services/api';
 import type { Order } from '../../services/api';
+import { formatPrice } from '@/utils/formatPrice';
 
 const ORDERS_PER_PAGE = 10;
 
@@ -98,10 +99,6 @@ const Profile: React.FC = () => {
         });
     };
 
-    const formatPrice = (price: number | string) => {
-        const numPrice = typeof price === 'string' ? parseFloat(price) : price;
-        return numPrice.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    };
 
     const getStatusBadge = (status: string) => {
         const statusMap: Record<string, { bg: string; text: string; label: string }> = {

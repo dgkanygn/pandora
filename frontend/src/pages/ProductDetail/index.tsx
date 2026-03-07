@@ -17,6 +17,8 @@ import productPlaceholder from "@/assets/placeholders/product.png";
 // Default placeholder image
 // const PLACEHOLDER_IMAGE = 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2670&auto=format&fit=crop';
 
+import { formatPrice } from '@/utils/formatPrice';
+
 const ProductDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const [quantity, setQuantity] = useState(1);
@@ -185,7 +187,7 @@ const ProductDetail: React.FC = () => {
 
                         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 leading-tight">{product.name}</h1>
 
-                        <div className="text-3xl font-bold text-gray-900 mb-6">{product.price.toLocaleString('tr-TR')} ₺</div>
+                        <div className="text-3xl font-bold text-gray-900 mb-6">{formatPrice(product.price)} ₺</div>
 
                         <p className="text-gray-600 text-sm leading-relaxed mb-6">
                             {product.description || "Bu ürün hakkında detaylı açıklama bulunmamaktadır. Ancak kalitesinden ve tazeliğinden emin olabilirsiniz."}
